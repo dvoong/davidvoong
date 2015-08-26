@@ -2,13 +2,143 @@
 
 {% block title %}Home Page{% endblock %}
 
-{% block content %}
+{% block internal_stylesheet %}
+<style>
 
-<div class="container">
-  <div class="jumbotron">
-    <h1>Warm apple crumble</h1>
-    <p style="height: 20px"></p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">I am a company</a>  <a class="btn btn-primary btn-lg" href="#" role="button">I am a student</a></p>
+  #id-main-container {
+  padding-left: 0px;
+  padding-right: 0px;
+  }
+  
+  #id-main-container .container-fluid {
+  background-color: #b0c4de;
+  }
+
+  #id-main-container .container-fluid:nth-child(even) {
+  background-color: white;
+  }  
+
+  <!-- #id-main-container .container { -->
+  <!-- background-color: #b0c4de; -->
+  <!-- } -->
+
+  h2 {
+  text-align: center;
+  }
+
+  .jumbotron {
+  background-image: url(/static/davidvoong/jumbotron_image.png);
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  height: 450px;
+  }
+
+  .row {
+  text-align: center;
+  }
+
+</style>
+{% endblock %}
+
+{% block content %}
+{% load staticfiles %}
+
+<div class="jumbotron">
+</div>
+
+<div id="id-main-container" class="container-fluid">
+
+  <div id="id-data-science-container" class="container-fluid" style="padding-top: 10px; padding-bottom: 40px;">
+    <div class="container">
+      <h2 style="padding-bottom: 20px;">Data Science</h2>
+      <div class="row">
+	<div class="col-md-4">
+	  <span class="glyphicon glyphicon-tasks" aria-hidden="true" style="font-size: 5em;"></span>
+	  <h3 style="padding-bottom: 10px">Distributed Systems</h3>
+	  <p>
+	    With the <a href="http://www.csc.com/insights/flxwd/78931-big_data_universe_beginning_to_explode">rapid growth of data</a> in current times comes the opportunity for insight into many aspects of our environment. In order to extract information our data analysis methods need to grow in terms of efficiency and speed, techniques such as parallelisation, distributed and cloud computing allow us to leverage our resources to achieve this. I use technologies such the <a href="http://www.csc.com/insights/flxwd/78931-big_data_universe_beginning_to_explode">LHC Computing Grid</a>, the <a href="https://hadoop.apache.org/">Hadoop</a> ecosystem and cloud services such as <a href="https://console.ng.bluemix.net/">IBM's Bluemix</a>, <a href="http://azure.microsoft.com/en-gb/">Microsoft's Azure</a> and <a href="https://cloud.google.com/appengine/docs">Google's Cloud Platform</a>.
+	  </p>
+	</div>
+	<div class="col-md-4">
+	  <span class="glyphicon glyphicon-stats" aria-hidden="true" style="font-size: 5em;"></span>
+	  <h3 style="padding-bottom: 10px">Statistics</h3>
+	  <p>At the core of any data science is statistics. Statistical methods allow large data sets to be summarised in a small set of numerical values or visualisations e.g. in a graph or histogram. They also give us an understanding on the limitations of our data, what are the errors on our data like? How do they vary with the size of our dataset? And to what degree of belief in our calculations can we have? My background in Physics gives me a solid foundation on which to tackle these questions.</p>
+	</div>
+	<div class="col-md-4">
+	  <span class="glyphicon glyphicon-eye-open" aria-hidden="true" style="font-size: 5em;"></span>
+	  <h3 style="padding-bottom: 10px">Visualisation</h3>
+	  <p>
+	    Data visualisation is a key tool for any data scientist, it allows data to be represented in a more intuitive way, helping people to make better <b>data driven</b> decisions. I use libraries such as <a href="http://matplotlib.org/">matplotlib</a> and the particle physics favourite, <a href="https://root.cern.ch/drupal/">ROOT</a> for data exploration. In addition to this, with the growth of the web comes the demand for more interactive data visualisations such as interactive maps, data networks and animated charts. For this sort of web base visualisation I use the <a href="http://d3js.org/">d3</a> library.
+	  </p>
+	</div>
+      </div>
+      
+      <div class="row">
+	<div class="col-md-4 col-md-offset-2">
+	  <img src="{% static 'davidvoong/regression.png' %}" style="width:75px">
+	  <h3 style="padding-bottom: 10px">Data Modelling</h3>
+	  <p>Modelling your data allows you to make predictions. This involves fitting your data to a model using statistical methods such as a Least Squares or Maximum Likelihood method. Your model and its fit can then be validated using a Chi Squared test whilst the error of the model can be calculated from the Covariance matrix of the model parameters from the fit. I use the <a href="http://www.numpy.org/">numpy</a> and <a href="http://www.scipy.org/">scipy</a> python libraries for this as well as the Particle Physics library <a href="http://seal.web.cern.ch/seal/snapshot/work-packages/mathlibs/minuit/">Minuit2</a>.</p>
+	</div>
+	<div class="col-md-4">
+	  <span class="glyphicon glyphicon-bullhorn" aria-hidden="true" style="font-size: 5em;"></span>
+	  <h3 style="padding-bottom: 10px">Communication</h3>
+	  <p>Understanding you data is great but doesn't mean anything if you can't communicate how you analysed your data and what the results mean. A data scientists needs to be able to communicate on many levels, from the non-specialists, junior members, peers and to specialists. Having an academic background which focuses on outreach with the general public, tutoring and high level research gives me experience across this spectrum.</p>
+	</div>
+      </div>
+      
+    </div>
+  </div>
+
+  <div id="id-software-development-container" class="container-fluid" style="padding-top: 10px; padding-bottom: 40px;">
+    <div class="container">
+      <h2 style="padding-bottom: 20px;">Software Development</h2>
+      <div class="row">
+	<div class="col-md-4">
+	  <span class="glyphicon glyphicon-globe" aria-hidden="true" style="font-size: 5em;"></span>
+	  <h3 style="padding-bottom: 10px">Web Development</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at ullamcorper erat. Proin fringilla ligula at felis varius laoreet. Sed eu odio eu massa tempor ornare. Vivamus eu ipsum convallis, aliquet purus posuere, rutrum quam. Nullam ac ante orci. Vivamus tincidunt, magna eu congue ullamcorper, neque diam placerat mi, eget fermentum neque turpis sit amet ante.</p>
+	</div>
+	<div class="col-md-4">
+	  <span class="glyphicon glyphicon-console" aria-hidden="true" style="font-size: 5em;"></span>
+	  <h3 style="padding-bottom: 10px">Languages</h3>
+	  <p>Sed ac justo vitae diam pulvinar lobortis sed vel ipsum. Praesent eu mauris et est molestie sagittis eu eu augue. Sed at nulla et ante rhoncus ullamcorper id eu ligula. Nam pharetra sit amet velit ut feugiat. Aenean eleifend sit amet augue vitae consectetur. Etiam dictum laoreet dui, non aliquet neque ultricies at. Maecenas ut augue a diam porta commodo sed gravida nisl.</p>
+	</div>
+	<div class="col-md-4">
+	  <span class="glyphicon glyphicon-wrench" aria-hidden="true" style="font-size: 5em;"></span>
+	  <h3 style="padding-bottom: 10px">Collaboration</h3>
+	  <p>Git, Jira, Test Driven Development, Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sollicitudin blandit aliquam. Nam dictum velit lacinia est lacinia, eget lacinia nisl mollis. Morbi turpis velit, sodales dapibus tristique eget, condimentum ut justo. Fusce vulputate elit augue, eget hendrerit arcu feugiat a</p>
+	</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="id-education-container" class="container-fluid" style="padding-top: 10px; padding-bottom: 40px;">
+    <div class="container">
+      <h2 style="padding-bottom: 20px;">Education</h2>
+      <div class="row">
+	<div class="col-md-4">
+	  <img src="{% static 'davidvoong/bristol_university.png' %}" style="width: 250px;">
+	  <h3 style="padding-bottom: 10px">PhD Particle Physics</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at ullamcorper erat. Proin fringilla ligula at felis varius laoreet. Sed eu odio eu massa tempor ornare. Vivamus eu ipsum convallis, aliquet purus posuere, rutrum quam. Nullam ac ante orci. Vivamus tincidunt, magna eu congue ullamcorper, neque diam placerat mi, eget fermentum neque turpis sit amet ante.</p>
+	</div>
+	<div class="col-md-4">
+	  <img src="{% static 'davidvoong/ucl.png' %}" style="width: 250px;">
+	  <h3 style="padding-bottom: 10px">MSc Physics</h3>
+	  <p>Sed ac justo vitae diam pulvinar lobortis sed vel ipsum. Praesent eu mauris et est molestie sagittis eu eu augue. Sed at nulla et ante rhoncus ullamcorper id eu ligula. Nam pharetra sit amet velit ut feugiat. Aenean eleifend sit amet augue vitae consectetur. Etiam dictum laoreet dui, non aliquet neque ultricies at. Maecenas ut augue a diam porta commodo sed gravida nisl.</p>
+	</div>
+	<div class="col-md-4">
+	  <img src="{% static 'davidvoong/university_of_leicester.gif' %}" style="width: 250px;">
+	  <h3 style="padding-bottom: 10px">BSc Physics with Space Science</h3>
+	  <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sollicitudin blandit aliquam. Nam dictum velit lacinia est lacinia, eget lacinia nisl mollis. Morbi turpis velit, sodales dapibus tristique eget, condimentum ut justo. Fusce vulputate elit augue, eget hendrerit arcu feugiat a</p>
+	</div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="id-work-history" class="container-fluid">
+    <h2>Work History</h2>
   </div>
 </div>
 
