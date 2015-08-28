@@ -11,11 +11,11 @@
   }
   
   #id-main-container .container-fluid {
-  background-color: #b0c4de;
+  background-color: white;
   }
 
   #id-main-container .container-fluid:nth-child(even) {
-  background-color: white;
+  background-color: #b0c4de;
   }  
 
   <!-- #id-main-container .container { -->
@@ -26,17 +26,28 @@
   text-align: center;
   }
 
-  .jumbotron {
-  background-image: url(/static/davidvoong/jumbotron_image.png);
-  background-size: 700px;
+  .jumbotron#bike {
+  background-image: url(/static/davidvoong/bike.jpg);
+  background-position: 50% 25%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: 900px;
   background-color: white;
-  height: 450px;
+  <!-- background-image: url(/static/davidvoong/jumbotron_image.png); -->
+  <!-- background-size: 700px; -->
+  <!-- background-repeat: no-repeat; -->
+  <!-- background-position: center; -->
+  background-color: white;
   }
 
   .row {
   text-align: center;
+  }
+
+  h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 3em;
   }
 
 </style>
@@ -45,10 +56,15 @@
 {% block content %}
 {% load staticfiles %}
 
-<div class="jumbotron">
-</div>
-
 <div id="id-main-container" class="container-fluid">
+
+  <div class="container">
+    <div id="bike" class="jumbotron" style="margin-top: 40px; margin-bottom: 40px; height: 500px; padding: 25px 25px 25px 25px;">
+    </div>
+    <div class="jumbotron">
+      <p style="margin-bottom: 0px">Hi my name is David Voong. I am a data scientist, software engineer, web developer, particle physicist and entrepreneur. I like long walks on the beach, candle lit dinners and sweaty Saturdays. On this page you'll find a little bit about what I do and the exiciting projects I'm working on.</p>
+    </div>
+  </div>
 
   <div id="id-data-science-container" class="container-fluid" style="padding-top: 10px; padding-bottom: 40px;">
     <div class="container">
@@ -76,6 +92,7 @@
       </div>
       
       <div class="row">
+
 	<div class="col-md-4 col-md-offset-2">
 	  <img src="{% static 'davidvoong/regression.png' %}" style="width:75px">
 	  <h3 style="padding-bottom: 10px">Data Modelling</h3>
@@ -88,8 +105,6 @@
 	<!-- </div> -->
 
 	<div class="col-md-4">
-	  <!-- <span class="glyphicon glyphicon-bullhorn" aria-hidden="true" style="font-size: 5em;"></span> -->
-	  <!-- <span class="glyphicons glyphicons-table"></span> -->
 	  <img src="{% static 'davidvoong/table.png' %}" style="width: 75px;">
 	  <h3 style="padding-bottom: 10px">Databases</h3>
 	  <p>Databases are used to store data, they come in all shapes and sizes depending on whether you require high read, write, creation, deletion speeds or consistent, secure, scalable and robust data storage. Having a deep understanding of the what the right tool for the job is essential when developing your system. I have experience with relational databases such as <a href="https://www.mysql.com/">MySQL</a>, <a href="http://www.postgresql.org/">PostgreSQL</a> as well as noSQL JSON document orientated databases such as <a href="#">MongoDB</a>.
@@ -131,7 +146,7 @@
 	<div class="col-md-4">
 	  <img src="{% static 'davidvoong/bristol_university.png' %}" style="width: 250px;">
 	  <h3 style="padding-bottom: 10px">PhD Particle Physics</h3>
-	  <p>Particle Physics is the study of the fundamental constituents of energy and matter. At the LHCb detector - one of the detectors in the  Large Hadron Collider at CERN - I researched particle production rates. Particle production occurs when the interaction between two particles is so great that particle anti-particle pairs are spontaneously created from the vacuum, resulting in events hundreds of particles. This process is dominated by QCD physics, a theory  notorious for being difficult in terms of mathematical calculations. Better understanding in this process allows physicists to get a better picture of very rare processes which may be obscured by the myriad of particles.</p>
+	  <p>Particle Physics is the study of the fundamental constituents of energy and matter. At the <a href="http://lhcb.web.cern.ch/lhcb/">LHCb detector</a> - one of the detectors in the  Large Hadron Collider at CERN - I researched particle production rates. Particle production occurs when the interaction between two particles is so great that particle anti-particle pairs are spontaneously created from the vacuum, resulting in events hundreds of particles. This process is dominated by QCD physics, a theory  notorious for being difficult in terms of mathematical calculations. Better understanding in this process allows physicists to get a better picture of very rare processes which may be obscured by the myriad of particles.</p>
 	</div>
 	<div class="col-md-4">
 	  <img src="{% static 'davidvoong/ucl.png' %}" style="width: 250px;">
@@ -148,7 +163,24 @@
   </div>
   
   <div id="id-work-history" class="container-fluid">
-    <h2>Work History</h2>
+    <div class="container">
+      <h2>Work History</h2>
+      <div class="row">
+	<div class="col-md-4 col-md-offset-2">
+	  <h3>OpenTRV</h3>
+	  <p><i>May 2015 - Present</i></p>
+	  <p><a href="http://opentrv.org.uk/">OpenTRV</a> is a London based startup specialises in using technology (with an emphasis on open source technology) to improve energy efficiency in order to create a more sustainable environment. Whilst working with OpenTRV I helped to develop a smart central heating system that is shared across multiple homes. This included building a REST API interface between the smart valves and sensors in each home and a centralised system which distributes hot water in the most efficient way.</p>
+	</div>
+	<div class="col-md-4">
+	  <h3>Learning Science Ltd</h3>
+	  <p><i>August 2014 - April 2015</i></p>
+	  <p><a href="http://www.learnsci.co.uk/">Learning Science Ltd</a> is a Bristol based company that specialises in science education, in particular it specialises in how technology can be used to provide a better learning experience. Whilst working with Learning Science I'm helped to design and develop innovative educational tools such as dynamic physics simulations which allowed students to play with laws of physics providing  them with a deeper understanding of the fundamental concepts.</p>
+	</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 100px">
   </div>
 </div>
 
