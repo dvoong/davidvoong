@@ -27,7 +27,8 @@ DEBUG = True
 DOMAIN = "localhost"
 
 ALLOWED_HOSTS = [DOMAIN]
-
+if DOMAIN.startswith('www.'):
+    ALLOWED_HOSTS.append(DOMAIN[4:])
 
 # Application definition
 
