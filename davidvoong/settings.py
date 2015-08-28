@@ -30,8 +30,6 @@ ALLOWED_HOSTS = [DOMAIN]
 if DOMAIN.startswith('www.'):
     ALLOWED_HOSTS.append(DOMAIN[4:])
 
-ALLOWED_HOSTS = ['www.davidvoong.co.uk', 'davidvoong.co.uk']
-
 # Application definition
 
 INSTALLED_APPS = (
