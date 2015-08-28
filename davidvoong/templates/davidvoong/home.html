@@ -36,7 +36,7 @@
   <!-- background-size: 700px; -->
   <!-- background-repeat: no-repeat; -->
   <!-- background-position: center; -->
-  background-color: white;
+  <!-- background-color: white; -->
   }
 
   .row {
@@ -58,14 +58,23 @@
 
 <div id="id-main-container" class="container-fluid">
 
-  <div class="container">
-    <div id="bike" class="jumbotron" style="margin-top: 40px; margin-bottom: 40px; height: 500px; padding: 25px 25px 25px 25px;">
-    </div>
-    <div class="jumbotron">
-      <p style="margin-bottom: 0px">Hi my name is David Voong. I am a data scientist, software engineer, web developer, particle physicist and entrepreneur. I like long walks on the beach, candle lit dinners and sweaty Saturdays. On this page you'll find a little bit about what I do and the exiciting projects I'm working on.</p>
+  <div class="container-fluid" style="background-color:white;">
+    <div class="container">
+      <div id="bike" class="jumbotron" style="margin-top: 40px; margin-bottom: 40px; height: 500px; padding: 25px 25px 25px 25px;">
+      </div>
+      <div class="jumbotron" style="width: 900px; margin-left: auto; margin-right: auto;">
+	<p style="margin-bottom: 0px">Hi my name is David Voong. I am a data scientist, software engineer, web developer, particle physicist and entrepreneur. I like long walks on the beach, candle lit dinners and sweaty Saturdays. On this page you'll find a little bit about what I do and the exiciting projects I'm working on.</p>
+      </div>
     </div>
   </div>
 
+  <div id="id-projects" class="container-fluid" style="padding-top: 10px; padding-bottom: 40px;">
+    <div class="container">
+      <h2 style="padding-bottom: 20px;">My Projects</h2>
+      <p>Etiam tempus, nisi vel porttitor commodo, leo risus dictum ante, ac porttitor risus orci et mauris. Ut mattis bibendum nisl. In mauris tortor, aliquet nec tortor iaculis, volutpat elementum odio. Vivamus non rhoncus orci. Quisque at felis at sem aliquam vehicula non quis nulla. Nulla pharetra dignissim odio gravida scelerisque. Aliquam libero magna, pellentesque nec posuere et, ultrices at quam. Aliquam erat volutpat. Suspendisse fermentum id velit sit amet lacinia. Ut commodo, lorem sit amet tincidunt varius, libero sem porta lacus, in mattis nisl massa non dolor. Ut et sodales metus. Mauris dapibus in nibh ut rhoncus. Nullam interdum, enim nec faucibus mattis, magna felis blandit dui, a tincidunt nunc lorem cursus leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur id iaculis eros, eget scelerisque urna. Phasellus scelerisque, sem nec faucibus egestas, elit mi varius nibh, sit amet posuere nisl nisl at ex.</p>
+    </div>
+  </div>
+  
   <div id="id-data-science-container" class="container-fluid" style="padding-top: 10px; padding-bottom: 40px;">
     <div class="container">
       <h2 style="padding-bottom: 20px;">Data Science</h2>
@@ -162,7 +171,7 @@
     </div>
   </div>
   
-  <div id="id-work-history" class="container-fluid">
+  <div id="id-work-history" class="container-fluid" style="padding-bottom: 50px">
     <div class="container">
       <h2>Work History</h2>
       <div class="row">
@@ -180,8 +189,6 @@
     </div>
   </div>
 
-  <div style="height: 100px">
-  </div>
 </div>
 
 {% endblock %}
