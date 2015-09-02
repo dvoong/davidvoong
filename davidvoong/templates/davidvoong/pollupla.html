@@ -29,7 +29,7 @@
   .jumbotron#bike {
   background-image: url(/static/davidvoong/london_pollution.jpeg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 1150px;
   height: 500px;
   margin-top: 20px;
   <!-- background-position: 50% 25%; -->
@@ -70,35 +70,39 @@
 	</div>
       </div>
       <div class="jumbotron" style="margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px;">
-	<p style="margin-bottom: 0px">Air pollution has been shown to have a long term detrimental impacts on health and well being. By combining air quality data with property market data Pollupla gives potential home buyers and renters the tools to make a better decision on where they live. We hope this information will provide people people with the financial as well as health related incentives to improve the air quality in their neighbourhoods.</p>
+	<p style="margin-bottom: 0px">Air pollution has been shown to have a long term detrimental impacts on health and well being. By combining air quality data with property market data Pollupla gives potential home buyers and renters the tools to make a better decision on where they live. We hope this information will provide people with the financial as well as health related incentives to improve the air quality in their neighbourhoods.</p>
       </div>
     </div>
   </div>
 
-  <div id="id-main" class="container-fluid" style="padding-top: 10px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px;">
-    <div class="container" style="padding-bottom: 50px;">
-      <div class="row">
-	<div class="col-md-4">
-	  <h2>Info</h2>
-	  <p>The aim of the project is to combine air quality data to the property market so that home owners are motivated to improve the air quality and hence the value of their homes and also providing home buyers with more information when searching for a property. It’s a bit like the energy rating you get for a fridge or washing machine but instead an air pollution rating for a home.</p>
-	</div>
-	<div class="col-md-4">
-	  <p>Our thinking was that money will always big a factor when it comes to changing people's/business' behaviour but instead of trying to fight human nature perhaps we can try to leverage it instead.</p>
-	</div>
-	<div class="col-md-4">
-	  <p>Here’s a proof of concept my team and I developed, http://pollupla.mybluemix.net/, it was hacked together in one day so don’t expect too much. When you enter a post code it accesses the Zoopla (Zoopla - Pollupla, get it?) database and finds properties in the area, it then collects data from the Kings College Air quality open data network and calculates the pollution at each property. Blue locations means there the data is loading, red, yellow and green locations correspond to the levels of pollution in order from bad to good. It’s a bit slow, so be patient.</p>
-	</div>
-	<div class="col-md-4">
-	  <p>Here’s an article the Evening Standard wrote about us, <a href="http://www.standard.co.uk/news/techandgadgets/technology-the-key-to-pollution-debate-as-app-exposes-dirty-air-neighbourhoods-10359122.html">asdf</a></p>
-	</div>
-	<div class="col-md-4">
-	  <p>The project is funded by Climate-KIC, http://www.climate-kic.org/for-students/pre-incubation/ who are providing €5,000 as well as business mentoring which is being matched by the AMEE, https://www.amee.com/ a company whose aim is to promote sustainable business.</p>
-	</div>
-	<div class="col-md-4">
-	  <p>In the near future we’ll hopefully have an MVP (Minimal Viable Product) by December to earn the single available Climate-KIC funded slot for the COP21 conference in Paris on December 7-8, http://www.cop21paris.org/.</p>
-	</div>
+  <div id="id-main" class="container-fluid" style="padding-top: 10px; padding-bottom: 100px;">
+    <div class="container">
+    <div class="col-md-4">
+      <h2>How it Works</h2>
+      <p>The pollupla project uses data collected from a network of air quality stations located around central London, the data is collected by and distributed by the <a href="http://www.londonair.org.uk/LondonAir/Default.aspx">King's College's London Air</a> network. This data is combined with data from the <a href="http://www.zoopla.co.uk/">Zoopla</a> property database to calculate the air pollution levels for properties near a given postcode.</p>
+
+      <p>During the 24 hour Climathon event we put together a <a href="http://pollupla.mybluemix.net">prototype</a>, blue markers correspond to properties where the data is being collected and red, yellow and green markers correspond to properties with air quality ratings varying from bad to good (note the queries can be a bit slow, ~15 seconds, so you'll need to be patient).</p>
+    </div>
+    
+    <div class="col-md-4">
+      <h2>Climathon</h2>
+      <p>At the London 2015 <a href="http://www.climate-kic.org/climathon/">Climathon</a> (hackathon event run by <a href="http://www.climate-kic.org/for-students/pre-incubation">Climate-KIC</a>) our team Pollupla won first prize for the best innovative solution to tackling climate change in London.</p>
+
+      <p>For first prize we were awarded £1000 to develop our business idea which was later increased to €10,000 when we were accelerated along their incubation route, €5000 of which is provided by <a href="https://www.amee.com">AMEE</a>, a company aimed at sustainable business.</p>
+
+      <p><a href="http://www.standard.co.uk/news/techandgadgets/technology-the-key-to-pollution-debate-as-app-exposes-dirty-air-neighbourhoods-10359122.html">Here</a> is an article written about us in the Evening Standard)</a></p>
+    </div>
+    
+    <div class="col-md-4">
+      <h2>The Team</h2>
+      <p>The team is consists of myself (data scientist), Nicholas O'Donnel-hoare (Designer) and Chris Guy (Developer). Nick and Chris both have many years of industrial experience in the sustainability sector and both work for <a href="https://www.amee.com">AMEE</a>.</p>
+
+      <p>In future we hope to continue to develop Pollupla are are aiming to earn a spot at the <a href="the COP21 conference in Paris on December 7-8, http://www.cop21paris.org">COP21 conference in Paris on December 7-8</a></p>
+    </div>
+
+    
     </div>
   </div>
-    
+</div>
 
 {% endblock %}
