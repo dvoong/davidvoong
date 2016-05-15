@@ -1,0 +1,60 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Finger Exercises</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+       -->
+    <link rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">
+
+  </head>
+  
+  <body>
+    
+    <div class="container">
+      
+      <div class="starter-template">
+	<h1 style="text-align: center">Finger Exercisees</h1>
+	<p class="lead"></p>
+      </div>
+
+      <div class="row">
+	<div style="text-align: center" class="col-sm-6 col-sm-offset-3">
+	  <p>Try thge exercise demonstrated below on both hands.</p>
+	  <img src="{% static "myapp/handtap_360.gif" %}" alt="My image"/>
+	</div>
+      </div>
+
+      <div class="row">
+	<div style="text-align: center" class="col-sm-2 col-sm-offset-3">
+	  <a href="/cbt/relaxing-sounds"><h2 style="text-align: center"><button class="btn btn-default">Previous Exercise</button></h2></a>
+	  <!-- <a href="#" <button class="btn btn-default">I'm Okay Now</button></a> -->
+	</div>
+	<div style="text-align: center" class="col-sm-2">
+	  <a href="/cbt/post-episode"><h2 style="text-align: center"><button class="btn btn-default">I'm Okay Now</button></h2></a>
+	  <!-- <a href="#" <button class="btn btn-default">I'm Okay Now</button></a> -->
+	</div>
+	<div style="text-align: center" class="col-sm-2">
+	  <a href="/cbt/inspiration"><h2 style="text-align: center"><button class="btn btn-default">More Exercises</button></h2></a>
+	</div>
+      </div>
+      
+    </div><!-- /.container -->
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
