@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Post Episode</title>
+    <title>Log Your Day</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -23,44 +23,46 @@
     <div class="container">
       
       <div class="starter-template">
-	<h1 style="text-align: center">I'm Feeling Better</h1>
+	<h1 style="text-align: center">Log Your Day</h1>
 	<p class="lead"></p>
       </div>
 
       <div class="row">
 	<div style="text-align: center" class="col-sm-6 col-sm-offset-3">
-	  <p>That's great! Please take some time to answer to a few questions about your episode. Your responses can help you and your physician gain insight into how to treat and manage your condition</p>
-	</div>
-      </div>
-      
-      <div class="row">
-	<div style="text-align: center" class="col-sm-6 col-sm-offset-3">
 	  <form action="/cbt/post-episode-details-submitted">
-	    <h2>Physical</h2>
+
+	    <h3>How are you feeling today?</h3>
+	    <div style="margin-bottom: 15px" class="btn-group" data-toggle="buttons">
+	      <label class="btn btn-primary active">
+		<input type="radio" name="options" id="option1" autocomplete="off" checked> Smiley
+	      </label>
+	      <label class="btn btn-primary">
+		<input type="radio" name="options" id="option2" autocomplete="off"> Normal
+	      </label>
+	      <label class="btn btn-primary">
+		<input type="radio" name="options" id="option3" autocomplete="off"> Sad
+	      </label>
+	      <label class="btn btn-primary">
+		<input type="radio" name="options" id="option3" autocomplete="off"> Unsure
+	      </label>
+	    </div>
+	    
 	    <div class="form-group">
-	      <label for="physical">What were your physical symptoms?</label>
-	      <input class="form-control" id="physical" type="text" name="physical" placeholder="What did you experience?">
+	      <label for="notice"><h3>How much do you notice your symptom now?</h3></label>
+	      <input class="form-control" id="notice" type="text" name="notice" placeholder="e.g. Once or twice a day">
 	    </div>
 
-	    <h2>Thoughts</h2>
 	    <div class="form-group">
-	      <label for="thought">What were you thinking about at the time?</label>
-	      <input class="form-control" id="thoughts" type="text" name="thought" placeholder="What thoughts went through your mind?">
+	      <label for="notice"><h3>How much have your symptoms impacted on your day?</h3></label>
+	      <input class="form-control" id="notice" type="text" name="notice" placeholder="e.g. I find it difficult to go outside">
+	    </div>
+
+	    <div class="form-group">
+	      <label for="notice"><h3>Would you like to input any daily thoughts?</h3></label>
+	      <input class="form-control" id="notice" type="text" name="notice" placeholder="Anything else?">
 	    </div>
 	    
-	    <h2>Emotions</h2>
-	    <div class="form-group">
-	      <label for="emotion">How did that make you feel?</label>
-	      <input class="form-control" id="emotion" type="text" name="emotion" placeholder="What emotions did you experience?">
-	    </div>
-	    
-	    <h2>Behaviour</h2>
-	    <div class="form-group">
-	      <label for="behaviour">How did this affect your behaviour?</label>
-	      <input class="form-control" id="behaviour" type="text" name="behaviour" placeholder="How did you respond?">
-	    </div>
-	    
-	    <button type="submit" class="btn btn-default">Submit</button>
+	    <button style="margin-top: 15px" type="submit" class="btn btn-default">Submit</button>
 	  </form>
 	  
 	</div>

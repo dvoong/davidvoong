@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>CBT for Me</title>
+    <title>Details Submitted</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -22,20 +23,27 @@
     <div class="container">
       
       <div class="starter-template">
-	<h1 style="text-align: center">CBT for Me</h1>
-	<p class="lead"></p>
-      </div>
+	<h1 style="text-align: center">Details Submitted!</h1>
 
-      <div class="row">
-	<div class="col-md-6">
-	  <a href="/cbt/breathe"><h2 style="text-align: center"><button class="btn btn-default">I'm Having an Episode</button></h2></a>
+	<div class="row">
+	  <div style="text-align: center" class="col-sm-6 col-sm-offset-3">
+	    <p>Well done for completing those details. Stay mindful.</p>
+
+	    <div class="row">
+	      <div style="text-align: center" class="col-sm-3">
+		<a href="/cbt/home"><h2 style="text-align: center"><button class="btn btn-default">Home</button></h2></a>
+	      </div>
+	      <div style="text-align: center" class="col-sm-3">
+		<a href="/cbt/day-log"><h2 style="text-align: center"><button class="btn btn-default">Complete your daily log</button></h2></a>
+	      </div>
+	      <div style="text-align: center" class="col-sm-3">
+		<a href="/cbt/breathe"><h2 style="text-align: center"><button class="btn btn-default">More relaxation/focus</button></h2></a>
+	      </div>
+	    </div>
+	    
+	  </div>
 	</div>
-	<div class="col-md-6">
-	  <a href="/cbt/day-log"><h2 style="text-align: center"><button class="btn btn-default">Tell Me About Your Day</button></h2></a>
-	  <!-- <h2 style="text-align: center">Heading</h2>
-	       <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-	       <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
-	</div>
+	
       </div>
       
     </div><!-- /.container -->

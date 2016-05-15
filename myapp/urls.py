@@ -2,7 +2,8 @@ from django.conf.urls import url
 from myapp import views
 
 urlpatterns = [
-    url(r'^$', views.welcome),
+    url(r'^$', views.home),
+    url(r'^home$', views.home),
     url(r'welcome', views.welcome),
     url(r'^breathe$', views.breathe),
     url(r'^submit-name$', views.submit_name),
@@ -21,5 +22,7 @@ urlpatterns = [
     url(r'^fin$', views.fin),
     url(r'^relaxing-sounds$', views.relaxing_sounds),
     url(r'^finger-exercises$', views.finger_exercises),
-    url(r'^inspiration$', views.inspiration)
+    url(r'^inspiration$', views.inspiration),
+    url(r'^post-episode-details-submitted$', views.post_episode_details_submitted),
+    url(r'^day-log$', views.day_log)
 ]

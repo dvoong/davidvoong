@@ -63,3 +63,9 @@ def finger_exercises(request):
 
 def inspiration(request):
     return render(request, 'inspiration.html')
+
+def post_episode_details_submitted(request):
+    return render(request, 'post_episode_details_submitted.html')
+
+def day_log(request):
+    return render(request, 'day_log.html')
