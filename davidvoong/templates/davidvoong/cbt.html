@@ -1,0 +1,85 @@
+{% extends 'davidvoong/base.html' %}
+
+{% block title %}CBT{% endblock %}
+
+{% block internal_stylesheet %}
+<style>
+
+  #id-main-container {
+  padding-left: 0px;
+  padding-right: 0px;
+  }
+  
+  #id-main-container .container-fluid {
+  background-color: white;
+  }
+
+  #id-main-container .container-fluid:nth-child(even) {
+  background-color: #b0c4de;
+  }  
+
+  <!-- #id-main-container .container { -->
+  <!-- background-color: #b0c4de; -->
+  <!-- } -->
+
+  h2 {
+  text-align: center;
+  }
+
+  .jumbotron#bike {
+  background-image: url(/static/davidvoong/cbt2.jpg);
+  background-repeat: no-repeat;
+  background-size: 1150px;
+  height: 500px;
+  margin-top: 20px;
+  <!-- background-position: 50% 25%; -->
+  <!-- background-size: 900px; -->
+  <!-- background-color: white; -->
+  <!-- background-image: url(/static/davidvoong/jumbotron_image.png); -->
+  <!-- background-size: 700px; -->
+  <!-- background-repeat: no-repeat; -->
+  <!-- background-position: center; -->
+  <!-- background-color: white; -->
+  }
+
+  .row {
+  text-align: center;
+  }
+
+  h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 3em;
+  }
+
+</style>
+{% endblock %}
+
+{% block content %}
+{% load staticfiles %}
+
+<div id="id-main-container" class="container-fluid">
+
+  <div class="container-fluid" style="background-color:white;">
+    <div class="container">
+      <!-- <div id="bike" class="jumbotron" style="margin-top: 40px; margin-bottom: 40px; height: 500px; padding: 25px 25px 25px 25px;"> -->
+	<div id="bike" class="jumbotron">
+	  <div class="container">
+	  <h1 style="margin-top: 0px">CBT</h1>
+	</div>
+      </div>
+      <div class="jumbotron" style="margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px;">
+	      <p style="">CBT is an important technique which can help sufferers of mental health issues manage their symptoms such as anxiety, depression and mania. Unfortunately waiting times can be very long, sometimes over a year meaning people could be suffering during this time.</p>
+	      <p>My team and I thought that this time could be put to better use. We developed an app that would give access to patients to practice CBT techniques as well as log the frequency and severity of their symptoms. This meant patients could have  some of their suffering alleviated as well as preparing them in CBT techniques before meeting their physician. Doctors could also make the most out of the valuable face to face time with their patients focusing on the most complicated issues.</p>
+
+	      <p>Below you can find a link to a prototype, it was built in an afternoon so don't expect too much!</p>
+
+	      <a class="btn btn-primary" href="welcome" role="button">Try the App</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

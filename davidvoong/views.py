@@ -6,3 +6,9 @@ def home(request):
 
 def pollupla(request):
     return render(request, 'davidvoong/pollupla.html')
+
+def commonplace(request):
+    return render(request, 'davidvoong/commonplace.html')
+
+def cbt(request):
+    return render(request, 'davidvoong/cbt.html')

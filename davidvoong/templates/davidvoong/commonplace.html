@@ -1,0 +1,84 @@
+{% extends 'davidvoong/base.html' %}
+
+{% block title %}Commonplace{% endblock %}
+
+{% block internal_stylesheet %}
+<style>
+
+  #id-main-container {
+  padding-left: 0px;
+  padding-right: 0px;
+  }
+  
+  #id-main-container .container-fluid {
+  background-color: white;
+  }
+
+  #id-main-container .container-fluid:nth-child(even) {
+  background-color: #b0c4de;
+  }  
+
+  <!-- #id-main-container .container { -->
+  <!-- background-color: #b0c4de; -->
+  <!-- } -->
+
+  h2 {
+  text-align: center;
+  }
+
+  .jumbotron#bike {
+  background-image: url(/static/davidvoong/peacehack.jpg);
+  background-repeat: no-repeat;
+  background-size: 1150px;
+  height: 500px;
+  margin-top: 20px;
+  <!-- background-position: 50% 25%; -->
+  <!-- background-size: 900px; -->
+  <!-- background-color: white; -->
+  <!-- background-image: url(/static/davidvoong/jumbotron_image.png); -->
+  <!-- background-size: 700px; -->
+  <!-- background-repeat: no-repeat; -->
+  <!-- background-position: center; -->
+  <!-- background-color: white; -->
+  }
+
+  .row {
+  text-align: center;
+  }
+
+  h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 3em;
+  }
+
+</style>
+{% endblock %}
+
+{% block content %}
+{% load staticfiles %}
+
+<div id="id-main-container" class="container-fluid">
+
+  <div class="container-fluid" style="background-color:white;">
+    <div class="container">
+      <!-- <div id="bike" class="jumbotron" style="margin-top: 40px; margin-bottom: 40px; height: 500px; padding: 25px 25px 25px 25px;"> -->
+	<div id="bike" class="jumbotron">
+	  <div class="container">
+	  <h1 style="margin-top: 0px">Commonplace</h1>
+	</div>
+      </div>
+      <div class="jumbotron" style="margin-left: auto; margin-right: auto; padding-left: 15px; padding-right: 15px;">
+	      <p>The refugee crisis which began in 2015 was a difficult time for people from the Middle East, Africa and Europe. My family were also refugees from the conflict in Vietnam in the late 70's and having first hand experience of growing up as a migrant in another country meant this was an issue close to my heart.</p>
+
+	      <p>However my family found much kindness from people of the UK, especially through my godparents, Harry and Betty, who made settling into and integrating into a new community much easier. This inspired me and my team at the London Peacehack to develop a platform for bringing together people like Betty and Harry and families new to a country.</p>
+
+		<p style="">The app was further developed by International Alert and trialed by Lambeth Council. You can find more info <a href="http://www.international-alert.org/news/peacehack-2015">here</a> as well as our pitch <a href="https://www.youtube.com/channel/UCixClhFEPagHDd3GRzr-ceg">here</a> <a href="http://techcitynews.com/2015/09/29/peacehack-winners-in-london-beirut-barcelona-and-dc-hack-for-peace/"></a></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

@@ -3,6 +3,7 @@ from myapp import views
 
 urlpatterns = [
     url(r'^$', views.home),
+    url(r'^app$', views.home),
     url(r'^home$', views.home),
     url(r'welcome', views.welcome),
     url(r'^breathe$', views.breathe),
